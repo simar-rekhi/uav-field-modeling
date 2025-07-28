@@ -1,6 +1,5 @@
-#Solves the Kinematic Part
-from RotationMath import RotationMath
 import numpy as np
+from RotationMath import RotationMath
 
 class OrientationEstimator:
     def __init__(self, dt=0.05, m0=np.array([25.0, 0.0, 45.0])):
@@ -15,4 +14,3 @@ class OrientationEstimator:
         error = np.linalg.norm(m_measured - m_pred)
         self.history.append((self.R.copy(), error))
         return self.R, error
-    
