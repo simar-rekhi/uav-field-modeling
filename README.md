@@ -49,7 +49,7 @@ python main.py
 2. Run:
 
 ```bash
-python simulate_from_data.py
+python simulator.py
 ```
 
 ## About the Original Lab Work
